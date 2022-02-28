@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+        <title>The Code Review</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+      <header>
+        <section class="header-top">
+          <h1>The Code Review</h1>
+        </section>
+        <section class="header-bottom">
+          <h2>Signup for our newsletter</h2>
+          <p>Get the latest news on how your code is doing right in your inbox</p>
+        </section>
+      </header>
+      <main>
+        <form action="index.html" method="post">
+          <section>
+            <fieldset class="contact-info">
+              <legend>Contact Information</legend>
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="user-name" placeholder="required" required><br>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="user-email" placeholder="required" required>
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="user-phone" placeholder="your phone number">
+              <label for="address">Street Address</label>
+              <input type="text" id="address" name="user-address" placeholder="your street address">
+              <label for="city">City</label>
+              <input type="text" id="city" name="user-city" placeholder="your city">
+              <label for="state">State</label>
+              <select id="state" name="user-state">
+                <option value="" disabled selected hidden>Choose State</option>
+                <option value="United States">United States</option>
+                <option value="Italy">Italy</option>
+                <option value="Germany">Germany</option>
+              </select>
+              <label for="zip">Zip Code</label>
+              <input type="text" id="zip" name="user-zip" placeholder="your zip">
+            </fieldset>
+          </section>
+          <section>
+            <fieldset class="newsletter">
+              <legend>Newsletter</legend>
+              <label class="news-labels">Select the newsletters you would like to receive</label><br>
+              <input type="checkbox" id="html" name="newsletter-subject" value="html-news">
+              <label for="html" class="labels">HTML News</label><br>
+              <input type="checkbox" id="css" name="newsletter-subject" value="css-news">
+              <label for="css">CSS News</label><br>
+              <input type="checkbox" id="js" name="newsletter-subject" value="js-news">
+              <label for="js">Javascript News</label><br>
+              <label>Newsletter format</label><br>
+              <input type="radio" id="html-format" name="newsletter-format" value="html">
+              <label for="html-format">HTML</label><br>
+              <input type="radio" id="plain-text" name="newsletter-format" value="plain-text">
+              <label for="plain-text">Plain text</label><br>
+              <label for="comments">Other topics you´d like to hear about</label><br>
+              <textarea id="comments" name="other-topics" placeholder="write here"></textarea>
+            </fieldset>
+          </section>
+          <button type="submit">Sign Up</button>
+        </form>
+
+      </main>
+      <footer>
+        <p class="footer">Copyright The Code Review</p>
+      </footer>
+    </body>
+  </html>

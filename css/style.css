@@ -1,0 +1,207 @@
+
+* {
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0 auto;
+
+}  
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+header {
+    margin: 0 auto;
+}
+
+.header-top {
+    background: #425550;
+    width: 100vw;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.header-bottom {
+    margin: 0 1rem 2px;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 4px solid black;
+    background: #dfd8ae ;
+}
+
+main {
+    margin: 0 1rem;
+    
+}
+
+main section {
+    border-top: 2px solid black;
+    background: white;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+h2, p {
+    text-align: center;
+}
+
+p,
+label {
+    color: gray;
+}
+
+.footer {
+   
+    margin: 0 1rem 0;
+    padding: 2rem 0 2rem;
+    font-style: italic;
+    
+    background: #dfd8ae;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+legend {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+input::placeholder{
+    text-align: right;
+    font-style: italic;
+    margin-right: .5rem;
+}
+
+textarea::placeholder {
+    font-style: italic;
+}
+
+.contact-info input,
+.contact-info select {
+    width: 100%;
+    height: 3rem;
+    margin-top: .6rem;
+    margin-bottom: 1rem;
+    border: none;
+    background: lightgray;
+    border-radius: 4px;
+    transition: background-color 0.5s ease;
+   
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline-color: blue;
+    background: #dfd8ae;
+}
+
+#zip {
+    width: 50%;
+}
+
+#name{
+    margin-bottom: 0;
+}
+
+.newsletter input {
+    margin: 1rem 1rem 1rem 0;
+}
+
+#html,
+#html-format {
+    margin-top: 2rem;
+}
+
+#js,
+#plain-text {
+    margin-bottom: 2rem;
+}
+
+textarea {
+    width: 100%;
+    height: 6rem;
+    margin-top: 1rem;
+    background: lightgray;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    margin: 1.5rem auto 1.5rem;; 
+    width: 100%;
+    height: 3.5rem;
+    background: lightskyblue;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    main,
+    .header-bottom,
+    footer {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer {
+        margin:0;
+    }
+    .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-bottom: 3rem;
+        justify-content: space-between;
+    }
+        
+    
+    .contact-info input,
+    .contact-info select {
+       width: 70%;
+    }
+    .contact-info label {
+        margin-top: 1.6rem;
+        width: 25%;
+    }
+    #name {
+        margin-left: auto;
+        margin-bottom: 1rem;
+    }
+    #zip {
+        width: 25%;
+        margin-right: 45%;
+    }
+    legend {
+        padding-top: 2.5rem;
+    }
+}
+
